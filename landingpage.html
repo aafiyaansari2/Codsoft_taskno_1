@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative Digital Agency providing services for your business growth and digital transformation">
+    <meta name="author" content="Your Name">
+    <title>Creative Digital Agency</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+   
+    <link rel="stylesheet" href="styles.css">
+    
+    
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Creative Digital Agency</h1>
+        </div>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <a href="#consult-form" class="btn btn-primary">Request a Consult</a>
+    </header>
+<hr>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>We Are Creative</h2>
+            <p>Your partner in digital transformation, helping you build innovative and scalable solutions.</p><br>
+            <br>
+            <a href="#about" class="btn btn-secondary">Learn More</a>
+            <a href="#consult-form" class="btn btn-primary">Request a Consult</a>
+        </div>
+    </section>
+<hr>
+    <section class="features">
+        <div class="container">
+            <div class="feature">
+                <img src="Business.jpg" alt="Launch Business">
+                <h3>Launch Your Business</h3>
+                <p>Helping you take your business to the next level with innovative strategies and technology.</p>
+            </div>
+            <div class="feature">
+                <img src="ost.jpg" alt="Online Support Team">
+                <h3>Online Support Team</h3>
+                <p>Our dedicated team offers 24/7 support to assist with all your needs.</p>
+            </div>
+            <div class="feature">
+                <img src="time.jpg" alt="Time Management">
+                <h3>Time Management</h3>
+                <p>Effective solutions to optimize your time and maximize productivity.</p>
+            </div>
+        </div>
+    </section>
+<hr>
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>With over 15 years of experience, we are passionate about delivering the best results for our clients through innovative digital solutions.</p>
+            <a href="#" class="btn btn-secondary">Read More</a>
+        </div>
+    </section>
+<hr>
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <img src="ue.jpg" alt="User Experience">
+                <h3>User Experience</h3>
+                <p>Creating seamless and intuitive experiences for your users.</p>
+            </div>
+            <div class="service">
+                <img src="cd.jpg" alt="Creative Design">
+                <h3>Creative Design</h3>
+                <p>Innovative designs that captivate and engage your audience.</p>
+            </div>
+            <div class="service">
+                <img src="re.jpg" alt="Retina Ready">
+                <h3>Retina Ready</h3>
+                <p>Providing high-quality visuals that look great on any device.</p>
+            </div>
+        </div>
+    </section>
+
+  <hr>
+    <section id="consult-form" class="contact-form">
+        <div class="container">
+            <h2>Request a Consultation</h2>
+            <form id="contactForm" action="submit_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+<hr>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Creative Digital Agency. All Rights Reserved.</p><br>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+<hr>
+   
+    <script>
+        // Form validation can be added here
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            if (!name || !email || !message) {
+                alert('All fields are required.');
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
